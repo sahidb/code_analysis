@@ -177,35 +177,95 @@ def generate_html_report(all_file_metrics, aggregated_metrics, output_path):
         print("No data to generate an HTML report.")
         return
     
-    html_content = """
+    # Updated HTML content generation with fixed formatting
+    html_content = f"""
     <html>
     <head>
         <title>Code Analysis Report</title>
         <style>
-            body { font-family: Arial, sans-serif; margin: 20px; background-color: #f9f9f9; }
-            .container { max-width: 1200px; margin: auto; background-color: #fff; padding: 20px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
-            h1, h2, h3 { color: #333; }
-            table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
-            th, td { padding: 10px; border: 1px solid #dddddd; text-align: left; }
-            th { background-color: #f2f2f2; font-weight: bold; }
-            .good { background-color: #d4edda; color: #155724; }
-            .moderate { background-color: #fff3cd; color: #856404; }
-            .poor { background-color: #f8d7da; color: #721c24; }
-            .explanation { background-color: #e9ecef; padding: 10px; margin-bottom: 20px; border-left: 4px solid #007bff; }
-            .summary { padding: 5px; font-weight: bold; }
+            body {{ font-family: Arial, sans-serif; margin: 20px; background-color: #f9f9f9; }}
+            .container {{ max-width: 1200px; margin: auto; background-color: #fff; padding: 20px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }}
+            h1, h2, h3 {{ color: #333; }}
+            table {{ width: 100%; border-collapse: collapse; margin-bottom: 20px; }}
+            th, td {{ padding: 10px; border: 1px solid #dddddd; text-align: left; }}
+            th {{ background-color: #f2f2f2; font-weight: bold; }}
+            .good {{ background-color: #d4edda; color: #155724; }}
+            .moderate {{ background-color: #fff3cd; color: #856404; }}
+            .poor {{ background-color: #f8d7da; color: #721c24; }}
+            .explanation {{ background-color: #e9ecef; padding: 10px; margin-bottom: 20px; border-left: 4px solid #007bff; }}
+            .summary {{ padding: 5px; font-weight: bold; }}
         </style>
     </head>
     <body>
         <div class="container">
             <h1>Code Analysis Report</h1>
-            <p>Generated on: {date}</p>
-    """.format(date=datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+            <p>Generated on: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}</p>
+            
+            <div class="explanation">
+                <h3>Report Explanation:</h3>
+                <p>This report provides an analysis of the Python code within the specified folder. The analysis includes various metrics that give insights into the code's quality, maintainability, and complexity.</p>
+                <ul>
+                    <li><strong>Cyclomatic Complexity:</strong> Measures the complexity of the code. A higher value indicates more complex code, which might be harder to maintain.</li>
+                    <li><strong>Maintainability Index:</strong> Provides an overall assessment of how maintainable the code is. A higher score indicates more maintainable code.</li>
+                    <li><strong>PEP-8 Score:</strong> Represents adherence to Python's style guide. A score closer to 10 means better compliance with Python best practices.</li>
+                    <li><strong>Halstead Metrics:</strong> These metrics measure different aspects of the code, such as the number of operators and operands, providing insights into code volume, effort, and difficulty.</li>
+                </ul>
+            </div>
+            
+            <h2>Aggregated Project Metrics</h2>
+            <table>
+                <tr><th>Metric</th><th>Value</th></tr>
+    """
     
-    # Insert the explanations, aggregated metrics, and individual file metrics as before
-
+    # Insert aggregated metrics
+    for metric, value in aggregated_metrics.items():
+        html_content += f"<tr><td>{metric}</td><td>{value:.2f}</td></tr>"
+    
+    html_content += """
+            </table>
+            
+            <h2>Individual File Metrics</h2>
+    """
+    
+    # Insert individual file metrics with color-coded summaries
+    for file_metrics in all_file_metrics:
+        maintainability_index = file_metrics["Maintainability Index"]
+        
+        if maintainability_index >= 80:
+            summary_class = "good"
+            summary_text = "The code is very maintainable."
+        elif maintainability_index >= 50:
+            summary_class = "moderate"
+            summary_text = "The code has moderate maintainability."
+        else:
+            summary_class = "poor"
+            summary_text = "The code has low maintainability and may need refactoring."
+        
+        html_content += f"""
+            <h3>File: {file_metrics['file_path']}</h3>
+            <div class="summary {summary_class}">Summary: {summary_text}</div>
+            <table>
+                <tr><th>Metric</th><th>Value</th></tr>
+        """
+        
+        for metric, value in file_metrics.items():
+            if metric != "file_path":
+                html_content += f"<tr><td>{metric}</td><td>{value:.2f}</td></tr>"
+        
+        html_content += "</table>"
+    
+    html_content += """
+        </div>
+    </body>
+    </html>
+    """
+    
+    # Write the HTML content to the file
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(html_content)
+    
     print(f"HTML report generated: {output_path}")
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Generate code analysis reports in HTML or Word format")
