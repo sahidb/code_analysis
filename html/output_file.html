@@ -1,215 +1,105 @@
 
     <html>
     <head>
-        <title>Code Analysis Report</title>
+        <title>React Code Analysis Report</title>
         <style>
             body { font-family: Arial, sans-serif; margin: 20px; background-color: #f9f9f9; }
-            .container { max-width: 1200px; margin: auto; background-color: #fff; padding: 20px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
+            .container { max-width: 1200px; margin: auto; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
             h1, h2, h3 { color: #333; }
             table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
             th, td { padding: 10px; border: 1px solid #dddddd; text-align: left; }
-            th { background-color: #f2f2f2; font-weight: bold; }
+            th { background-color: #f2f2f2; }
             .good { background-color: #d4edda; color: #155724; }
             .moderate { background-color: #fff3cd; color: #856404; }
             .poor { background-color: #f8d7da; color: #721c24; }
-            .explanation { background-color: #e9ecef; padding: 10px; margin-bottom: 20px; border-left: 4px solid #007bff; }
-            .summary { padding: 5px; font-weight: bold; }
+            .explanation { background-color: #eef5fb; padding: 10px; margin-bottom: 20px; border-left: 4px solid #007bff; }
+            .summary { font-weight: bold; margin-bottom: 10px; }
         </style>
     </head>
     <body>
         <div class="container">
-            <h1>Code Analysis Report</h1>
-            <p>Generated on: 2024-09-28 18:50:04</p>
-            
+            <h1>React Code Analysis Report</h1>
+            <p>Generated on: 2024-09-29 05:51:42</p>
+
             <div class="explanation">
                 <h3>Report Explanation:</h3>
-                <p>This report provides an analysis of the Python code within the specified folder. The analysis includes various metrics that give insights into the code's quality, maintainability, and complexity.</p>
-                <ul>
-                    <li><strong>Cyclomatic Complexity:</strong> Measures the complexity of the code. A higher value indicates more complex code, which might be harder to maintain.</li>
-                    <li><strong>Maintainability Index:</strong> Provides an overall assessment of how maintainable the code is. A higher score indicates more maintainable code.</li>
-                    <li><strong>PEP-8 Score:</strong> Represents adherence to Python's style guide. A score closer to 10 means better compliance with Python best practices.</li>
-                    <li><strong>Halstead Metrics:</strong> These metrics measure different aspects of the code, such as the number of operators and operands, providing insights into code volume, effort, and difficulty.</li>
-                </ul>
+                <p>This report provides an analysis of your React code, offering insights into code complexity, maintainability, and potential issues.</p>
             </div>
             
             <h2>Aggregated Project Metrics</h2>
             <table>
                 <tr><th>Metric</th><th>Value</th></tr>
-    <tr><td>Total Files</td><td>34.00</td></tr><tr><td>Average Cyclomatic Complexity</td><td>1.01</td></tr><tr><td>Maximum Cyclomatic Complexity</td><td>4.00</td></tr><tr><td>Average Halstead Volume</td><td>7.61</td></tr><tr><td>Average Halstead Effort</td><td>7.30</td></tr><tr><td>Average Halstead Difficulty</td><td>0.29</td></tr><tr><td>Total Lines of Code</td><td>674.00</td></tr><tr><td>Total Comments</td><td>14.00</td></tr><tr><td>Average Maintainability Index</td><td>59.70</td></tr><tr><td>Average PEP-8 Score</td><td>0.72</td></tr>
-            </table>
-            
-            <h2>Individual File Metrics</h2>
-    
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\main.py</h3>
-            <div class="summary poor">Summary: The code has low maintainability and may need refactoring.</div>
+    <tr><td>Total Files</td><td>14.00</td></tr><tr><td>Average Cyclomatic Complexity</td><td>0.00</td></tr><tr><td>Maximum Cyclomatic Complexity</td><td>0.00</td></tr><tr><td>Average Halstead Volume</td><td>0.00</td></tr><tr><td>Average Halstead Effort</td><td>0.00</td></tr><tr><td>Average Halstead Difficulty</td><td>0.00</td></tr><tr><td>Average Maintainability Index</td><td>100.00</td></tr><tr><td>Total ESLint Issues</td><td>0.00</td></tr></table><h2>Individual File Metrics</h2>
+            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\frontend\src\App.js</h3>
+            <div class="summary good">Summary: This file is very maintainable.</div>
             <table>
                 <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>1.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>1.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>0.00</td></tr><tr><td>Total Operands</td><td>0.00</td></tr><tr><td>Lines of Code</td><td>55.00</td></tr><tr><td>Comments</td><td>7.00</td></tr><tr><td>Maintainability Index</td><td>0.00</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\__init__.py</h3>
-            <div class="summary good">Summary: The code is very maintainable.</div>
+        <tr><td>Cyclomatic Complexity (avg)</td><td>0.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>0.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>100.00</td></tr><tr><td>Total Operands</td><td>100.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>ESLint Issues</td><td>0.00</td></tr></table>
+            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\frontend\src\index.js</h3>
+            <div class="summary good">Summary: This file is very maintainable.</div>
             <table>
                 <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>0.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>0.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>0.00</td></tr><tr><td>Total Operands</td><td>0.00</td></tr><tr><td>Lines of Code</td><td>0.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\api\__init__ .py</h3>
-            <div class="summary good">Summary: The code is very maintainable.</div>
+        <tr><td>Cyclomatic Complexity (avg)</td><td>0.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>0.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>100.00</td></tr><tr><td>Total Operands</td><td>100.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>ESLint Issues</td><td>0.00</td></tr></table>
+            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\frontend\src\components\Auth\Authenticated.jsx</h3>
+            <div class="summary good">Summary: This file is very maintainable.</div>
             <table>
                 <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>0.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>0.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>0.00</td></tr><tr><td>Total Operands</td><td>0.00</td></tr><tr><td>Lines of Code</td><td>0.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\api\api_v1\routers.py</h3>
-            <div class="summary good">Summary: The code is very maintainable.</div>
+        <tr><td>Cyclomatic Complexity (avg)</td><td>0.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>0.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>100.00</td></tr><tr><td>Total Operands</td><td>100.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>ESLint Issues</td><td>0.00</td></tr></table>
+            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\frontend\src\components\Auth\Login.jsx</h3>
+            <div class="summary good">Summary: This file is very maintainable.</div>
             <table>
                 <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>0.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>0.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>0.00</td></tr><tr><td>Total Operands</td><td>0.00</td></tr><tr><td>Lines of Code</td><td>18.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\api\api_v1\__init__.py</h3>
-            <div class="summary good">Summary: The code is very maintainable.</div>
+        <tr><td>Cyclomatic Complexity (avg)</td><td>0.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>0.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>100.00</td></tr><tr><td>Total Operands</td><td>100.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>ESLint Issues</td><td>0.00</td></tr></table>
+            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\frontend\src\components\Auth\PublicRoute.jsx</h3>
+            <div class="summary good">Summary: This file is very maintainable.</div>
             <table>
                 <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>0.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>0.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>0.00</td></tr><tr><td>Total Operands</td><td>0.00</td></tr><tr><td>Lines of Code</td><td>0.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\api\api_v1\handlers\city.py</h3>
-            <div class="summary poor">Summary: The code has low maintainability and may need refactoring.</div>
+        <tr><td>Cyclomatic Complexity (avg)</td><td>0.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>0.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>100.00</td></tr><tr><td>Total Operands</td><td>100.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>ESLint Issues</td><td>0.00</td></tr></table>
+            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\frontend\src\components\Auth\Register.jsx</h3>
+            <div class="summary good">Summary: This file is very maintainable.</div>
             <table>
                 <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>1.80</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>2.00</td></tr><tr><td>Halstead Vocabulary</td><td>5.00</td></tr><tr><td>Halstead Length</td><td>8.00</td></tr><tr><td>Halstead Volume</td><td>18.58</td></tr><tr><td>Halstead Effort</td><td>9.29</td></tr><tr><td>Halstead Difficulty</td><td>0.50</td></tr><tr><td>Total Operators</td><td>1.00</td></tr><tr><td>Total Operands</td><td>4.00</td></tr><tr><td>Lines of Code</td><td>43.00</td></tr><tr><td>Comments</td><td>2.00</td></tr><tr><td>Maintainability Index</td><td>0.00</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\api\api_v1\handlers\hello.py</h3>
-            <div class="summary good">Summary: The code is very maintainable.</div>
+        <tr><td>Cyclomatic Complexity (avg)</td><td>0.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>0.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>100.00</td></tr><tr><td>Total Operands</td><td>100.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>ESLint Issues</td><td>0.00</td></tr></table>
+            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\frontend\src\components\Dashboard\DashboardComponent.jsx</h3>
+            <div class="summary good">Summary: This file is very maintainable.</div>
             <table>
                 <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>1.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>1.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>0.00</td></tr><tr><td>Total Operands</td><td>0.00</td></tr><tr><td>Lines of Code</td><td>11.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>97.60</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\api\api_v1\handlers\icd_prov.py</h3>
-            <div class="summary poor">Summary: The code has low maintainability and may need refactoring.</div>
+        <tr><td>Cyclomatic Complexity (avg)</td><td>0.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>0.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>100.00</td></tr><tr><td>Total Operands</td><td>100.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>ESLint Issues</td><td>0.00</td></tr></table>
+            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\frontend\src\components\Navbar\NavBar.jsx</h3>
+            <div class="summary good">Summary: This file is very maintainable.</div>
             <table>
                 <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>2.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>2.00</td></tr><tr><td>Halstead Vocabulary</td><td>2.00</td></tr><tr><td>Halstead Length</td><td>2.00</td></tr><tr><td>Halstead Volume</td><td>2.00</td></tr><tr><td>Halstead Effort</td><td>1.00</td></tr><tr><td>Halstead Difficulty</td><td>0.50</td></tr><tr><td>Total Operators</td><td>1.00</td></tr><tr><td>Total Operands</td><td>1.00</td></tr><tr><td>Lines of Code</td><td>22.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>23.74</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\api\api_v1\handlers\province.py</h3>
-            <div class="summary poor">Summary: The code has low maintainability and may need refactoring.</div>
+        <tr><td>Cyclomatic Complexity (avg)</td><td>0.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>0.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>100.00</td></tr><tr><td>Total Operands</td><td>100.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>ESLint Issues</td><td>0.00</td></tr></table>
+            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\frontend\src\components\Theme\ThemeToggler.jsx</h3>
+            <div class="summary good">Summary: This file is very maintainable.</div>
             <table>
                 <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>1.80</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>2.00</td></tr><tr><td>Halstead Vocabulary</td><td>5.00</td></tr><tr><td>Halstead Length</td><td>8.00</td></tr><tr><td>Halstead Volume</td><td>18.58</td></tr><tr><td>Halstead Effort</td><td>9.29</td></tr><tr><td>Halstead Difficulty</td><td>0.50</td></tr><tr><td>Total Operators</td><td>1.00</td></tr><tr><td>Total Operands</td><td>4.00</td></tr><tr><td>Lines of Code</td><td>41.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>0.00</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\api\api_v1\handlers\user.py</h3>
-            <div class="summary poor">Summary: The code has low maintainability and may need refactoring.</div>
+        <tr><td>Cyclomatic Complexity (avg)</td><td>0.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>0.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>100.00</td></tr><tr><td>Total Operands</td><td>100.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>ESLint Issues</td><td>0.00</td></tr></table>
+            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\frontend\src\context\JWTAuthContext.jsx</h3>
+            <div class="summary good">Summary: This file is very maintainable.</div>
             <table>
                 <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>1.67</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>2.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>0.00</td></tr><tr><td>Total Operands</td><td>0.00</td></tr><tr><td>Lines of Code</td><td>37.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>0.00</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\api\api_v1\handlers\__init__.py</h3>
-            <div class="summary good">Summary: The code is very maintainable.</div>
+        <tr><td>Cyclomatic Complexity (avg)</td><td>0.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>0.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>100.00</td></tr><tr><td>Total Operands</td><td>100.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>ESLint Issues</td><td>0.00</td></tr></table>
+            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\frontend\src\hooks\useAuth.js</h3>
+            <div class="summary good">Summary: This file is very maintainable.</div>
             <table>
                 <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>0.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>0.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>0.00</td></tr><tr><td>Total Operands</td><td>0.00</td></tr><tr><td>Lines of Code</td><td>0.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\api\auth\jwt.py</h3>
-            <div class="summary poor">Summary: The code has low maintainability and may need refactoring.</div>
+        <tr><td>Cyclomatic Complexity (avg)</td><td>0.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>0.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>100.00</td></tr><tr><td>Total Operands</td><td>100.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>ESLint Issues</td><td>0.00</td></tr></table>
+            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\frontend\src\services\axios.js</h3>
+            <div class="summary good">Summary: This file is very maintainable.</div>
             <table>
                 <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>2.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>3.00</td></tr><tr><td>Halstead Vocabulary</td><td>3.00</td></tr><tr><td>Halstead Length</td><td>4.00</td></tr><tr><td>Halstead Volume</td><td>6.34</td></tr><tr><td>Halstead Effort</td><td>3.17</td></tr><tr><td>Halstead Difficulty</td><td>0.50</td></tr><tr><td>Total Operators</td><td>1.00</td></tr><tr><td>Total Operands</td><td>2.00</td></tr><tr><td>Lines of Code</td><td>61.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>0.00</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\api\auth\__init__.py</h3>
-            <div class="summary good">Summary: The code is very maintainable.</div>
+        <tr><td>Cyclomatic Complexity (avg)</td><td>0.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>0.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>100.00</td></tr><tr><td>Total Operands</td><td>100.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>ESLint Issues</td><td>0.00</td></tr></table>
+            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\frontend\src\utils\jwt.js</h3>
+            <div class="summary good">Summary: This file is very maintainable.</div>
             <table>
                 <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>0.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>0.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>0.00</td></tr><tr><td>Total Operands</td><td>0.00</td></tr><tr><td>Lines of Code</td><td>0.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\api\deps\user_deps.py</h3>
-            <div class="summary poor">Summary: The code has low maintainability and may need refactoring.</div>
+        <tr><td>Cyclomatic Complexity (avg)</td><td>0.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>0.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>100.00</td></tr><tr><td>Total Operands</td><td>100.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>ESLint Issues</td><td>0.00</td></tr></table>
+            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\frontend\src\utils\session.js</h3>
+            <div class="summary good">Summary: This file is very maintainable.</div>
             <table>
                 <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>4.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>4.00</td></tr><tr><td>Halstead Vocabulary</td><td>5.00</td></tr><tr><td>Halstead Length</td><td>5.00</td></tr><tr><td>Halstead Volume</td><td>11.61</td></tr><tr><td>Halstead Effort</td><td>11.61</td></tr><tr><td>Halstead Difficulty</td><td>1.00</td></tr><tr><td>Total Operators</td><td>2.00</td></tr><tr><td>Total Operands</td><td>3.00</td></tr><tr><td>Lines of Code</td><td>45.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>0.00</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\api\deps\__init__.py</h3>
-            <div class="summary good">Summary: The code is very maintainable.</div>
-            <table>
-                <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>0.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>0.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>0.00</td></tr><tr><td>Total Operands</td><td>0.00</td></tr><tr><td>Lines of Code</td><td>0.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\core\config.py</h3>
-            <div class="summary moderate">Summary: The code has moderate maintainability.</div>
-            <table>
-                <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>1.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>1.00</td></tr><tr><td>Halstead Vocabulary</td><td>5.00</td></tr><tr><td>Halstead Length</td><td>6.00</td></tr><tr><td>Halstead Volume</td><td>13.93</td></tr><tr><td>Halstead Effort</td><td>6.97</td></tr><tr><td>Halstead Difficulty</td><td>0.50</td></tr><tr><td>Total Operators</td><td>1.00</td></tr><tr><td>Total Operands</td><td>4.00</td></tr><tr><td>Lines of Code</td><td>19.00</td></tr><tr><td>Comments</td><td>1.00</td></tr><tr><td>Maintainability Index</td><td>52.80</td></tr><tr><td>PEP-8 Score</td><td>0.62</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\core\security.py</h3>
-            <div class="summary poor">Summary: The code has low maintainability and may need refactoring.</div>
-            <table>
-                <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>1.50</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>2.00</td></tr><tr><td>Halstead Vocabulary</td><td>12.00</td></tr><tr><td>Halstead Length</td><td>18.00</td></tr><tr><td>Halstead Volume</td><td>64.53</td></tr><tr><td>Halstead Effort</td><td>77.44</td></tr><tr><td>Halstead Difficulty</td><td>1.20</td></tr><tr><td>Total Operators</td><td>2.00</td></tr><tr><td>Total Operands</td><td>10.00</td></tr><tr><td>Lines of Code</td><td>36.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>0.00</td></tr><tr><td>PEP-8 Score</td><td>2.08</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\core\__init__.py</h3>
-            <div class="summary good">Summary: The code is very maintainable.</div>
-            <table>
-                <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>0.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>0.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>0.00</td></tr><tr><td>Total Operands</td><td>0.00</td></tr><tr><td>Lines of Code</td><td>0.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\models\city_model.py</h3>
-            <div class="summary good">Summary: The code is very maintainable.</div>
-            <table>
-                <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>1.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>1.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>0.00</td></tr><tr><td>Total Operands</td><td>0.00</td></tr><tr><td>Lines of Code</td><td>10.00</td></tr><tr><td>Comments</td><td>1.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\models\icdprov_model.py</h3>
-            <div class="summary good">Summary: The code is very maintainable.</div>
-            <table>
-                <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>1.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>1.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>0.00</td></tr><tr><td>Total Operands</td><td>0.00</td></tr><tr><td>Lines of Code</td><td>12.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>92.40</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\models\province_model.py</h3>
-            <div class="summary good">Summary: The code is very maintainable.</div>
-            <table>
-                <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>1.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>1.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>0.00</td></tr><tr><td>Total Operands</td><td>0.00</td></tr><tr><td>Lines of Code</td><td>9.00</td></tr><tr><td>Comments</td><td>2.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\models\user_model.py</h3>
-            <div class="summary poor">Summary: The code has low maintainability and may need refactoring.</div>
-            <table>
-                <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>1.29</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>2.00</td></tr><tr><td>Halstead Vocabulary</td><td>3.00</td></tr><tr><td>Halstead Length</td><td>6.00</td></tr><tr><td>Halstead Volume</td><td>9.51</td></tr><tr><td>Halstead Effort</td><td>9.51</td></tr><tr><td>Halstead Difficulty</td><td>1.00</td></tr><tr><td>Total Operators</td><td>1.00</td></tr><tr><td>Total Operands</td><td>2.00</td></tr><tr><td>Lines of Code</td><td>40.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>0.00</td></tr><tr><td>PEP-8 Score</td><td>2.76</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\models\__init__.py</h3>
-            <div class="summary good">Summary: The code is very maintainable.</div>
-            <table>
-                <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>0.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>0.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>0.00</td></tr><tr><td>Total Operands</td><td>0.00</td></tr><tr><td>Lines of Code</td><td>0.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\schemas\auth_schema.py</h3>
-            <div class="summary good">Summary: The code is very maintainable.</div>
-            <table>
-                <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>1.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>1.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>0.00</td></tr><tr><td>Total Operands</td><td>0.00</td></tr><tr><td>Lines of Code</td><td>11.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>97.60</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\schemas\city_schemas.py</h3>
-            <div class="summary moderate">Summary: The code has moderate maintainability.</div>
-            <table>
-                <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>1.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>1.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>0.00</td></tr><tr><td>Total Operands</td><td>0.00</td></tr><tr><td>Lines of Code</td><td>17.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>66.40</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\schemas\icdprov_schemas.py</h3>
-            <div class="summary moderate">Summary: The code has moderate maintainability.</div>
-            <table>
-                <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>1.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>1.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>0.00</td></tr><tr><td>Total Operands</td><td>0.00</td></tr><tr><td>Lines of Code</td><td>15.00</td></tr><tr><td>Comments</td><td>1.00</td></tr><tr><td>Maintainability Index</td><td>76.80</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\schemas\province_schemas.py</h3>
-            <div class="summary good">Summary: The code is very maintainable.</div>
-            <table>
-                <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>1.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>1.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>0.00</td></tr><tr><td>Total Operands</td><td>0.00</td></tr><tr><td>Lines of Code</td><td>12.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>92.40</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\schemas\user_schema.py</h3>
-            <div class="summary poor">Summary: The code has low maintainability and may need refactoring.</div>
-            <table>
-                <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>1.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>1.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>0.00</td></tr><tr><td>Total Operands</td><td>0.00</td></tr><tr><td>Lines of Code</td><td>24.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>30.00</td></tr><tr><td>PEP-8 Score</td><td>1.67</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\schemas\__init__.py</h3>
-            <div class="summary good">Summary: The code is very maintainable.</div>
-            <table>
-                <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>0.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>0.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>0.00</td></tr><tr><td>Total Operands</td><td>0.00</td></tr><tr><td>Lines of Code</td><td>0.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\services\city_service.py</h3>
-            <div class="summary poor">Summary: The code has low maintainability and may need refactoring.</div>
-            <table>
-                <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>2.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>3.00</td></tr><tr><td>Halstead Vocabulary</td><td>5.00</td></tr><tr><td>Halstead Length</td><td>12.00</td></tr><tr><td>Halstead Volume</td><td>27.86</td></tr><tr><td>Halstead Effort</td><td>27.86</td></tr><tr><td>Halstead Difficulty</td><td>1.00</td></tr><tr><td>Total Operators</td><td>1.00</td></tr><tr><td>Total Operands</td><td>4.00</td></tr><tr><td>Lines of Code</td><td>40.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>0.00</td></tr><tr><td>PEP-8 Score</td><td>6.90</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\services\icdprov_service.py</h3>
-            <div class="summary good">Summary: The code is very maintainable.</div>
-            <table>
-                <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>1.50</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>2.00</td></tr><tr><td>Halstead Vocabulary</td><td>4.00</td></tr><tr><td>Halstead Length</td><td>9.00</td></tr><tr><td>Halstead Volume</td><td>18.00</td></tr><tr><td>Halstead Effort</td><td>18.00</td></tr><tr><td>Halstead Difficulty</td><td>1.00</td></tr><tr><td>Total Operators</td><td>1.00</td></tr><tr><td>Total Operands</td><td>3.00</td></tr><tr><td>Lines of Code</td><td>8.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\services\province_service.py</h3>
-            <div class="summary poor">Summary: The code has low maintainability and may need refactoring.</div>
-            <table>
-                <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>2.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>3.00</td></tr><tr><td>Halstead Vocabulary</td><td>4.00</td></tr><tr><td>Halstead Length</td><td>9.00</td></tr><tr><td>Halstead Volume</td><td>18.00</td></tr><tr><td>Halstead Effort</td><td>18.00</td></tr><tr><td>Halstead Difficulty</td><td>1.00</td></tr><tr><td>Total Operators</td><td>1.00</td></tr><tr><td>Total Operands</td><td>3.00</td></tr><tr><td>Lines of Code</td><td>39.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>0.00</td></tr><tr><td>PEP-8 Score</td><td>7.59</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\services\user_service.py</h3>
-            <div class="summary poor">Summary: The code has low maintainability and may need refactoring.</div>
-            <table>
-                <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>1.67</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>3.00</td></tr><tr><td>Halstead Vocabulary</td><td>10.00</td></tr><tr><td>Halstead Length</td><td>15.00</td></tr><tr><td>Halstead Volume</td><td>49.83</td></tr><tr><td>Halstead Effort</td><td>56.06</td></tr><tr><td>Halstead Difficulty</td><td>1.12</td></tr><tr><td>Total Operators</td><td>2.00</td></tr><tr><td>Total Operands</td><td>8.00</td></tr><tr><td>Lines of Code</td><td>49.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>0.00</td></tr><tr><td>PEP-8 Score</td><td>2.90</td></tr></table>
-            <h3>File: D:\WORKSPACE\FASTAPI\farm-hajj\backend\app\services\__init__.py</h3>
-            <div class="summary good">Summary: The code is very maintainable.</div>
-            <table>
-                <tr><th>Metric</th><th>Value</th></tr>
-        <tr><td>Cyclomatic Complexity (avg)</td><td>0.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>0.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>0.00</td></tr><tr><td>Total Operands</td><td>0.00</td></tr><tr><td>Lines of Code</td><td>0.00</td></tr><tr><td>Comments</td><td>0.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>PEP-8 Score</td><td>0.00</td></tr></table>
+        <tr><td>Cyclomatic Complexity (avg)</td><td>0.00</td></tr><tr><td>Cyclomatic Complexity (max)</td><td>0.00</td></tr><tr><td>Halstead Vocabulary</td><td>0.00</td></tr><tr><td>Halstead Length</td><td>0.00</td></tr><tr><td>Halstead Volume</td><td>0.00</td></tr><tr><td>Halstead Effort</td><td>0.00</td></tr><tr><td>Halstead Difficulty</td><td>0.00</td></tr><tr><td>Total Operators</td><td>100.00</td></tr><tr><td>Total Operands</td><td>100.00</td></tr><tr><td>Maintainability Index</td><td>100.00</td></tr><tr><td>ESLint Issues</td><td>0.00</td></tr></table>
         </div>
     </body>
     </html>
